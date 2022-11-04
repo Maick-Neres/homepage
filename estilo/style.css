@@ -95,11 +95,7 @@ main button{
   margin-bottom: 50px;
   font-size: 1rem;
   color: white;
-}
-
-button:hover{
-  background-color: black;
-  cursor: pointer;
+    cursor: pointer;
 }
 
 main aside{
