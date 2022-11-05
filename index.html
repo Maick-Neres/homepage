@@ -8,15 +8,18 @@
       rel="stylesheet">
       <script src="javascript.js" defer></script>
   <link rel="stylesheet" href="estilo/style.css">
+  <link rel="stylesheet" href="estilo/dask.css">
   <title>homepage</title>
 </head>
-<body>
+<body  onresize="size()">
   <header>
     <div class="logos">
       <img src="images/logo.svg" alt="logo">
       <span class="material-icons" id="icon">menu</span>
+      <span class="material-icons" id="icon2">closer</span>
+
     </div>
-    <menu class="menu">
+    <menu id="menu">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Novo</a></li>
@@ -33,41 +36,41 @@
     <h1>O futuro brilhante da web 3.0?</h1>
     <p>Mergulhamos na próxima evolução da web que afirma colar o poder das plataformas de volta nas mãos das pessoas.Mas está realmente cumprindo sua promessa?</p>
     <button>Saber mais</button>
+    </main>
     <aside>
       <h2>Novo</h2>
       <section  class="sec">
-        <h3>Hidrogênio VS Carros elétricos</h3>
+        <h3><a href="#">Hidrogênio VS Carros elétricos</a></h3>
         <p>será que os carros movidos a Hidrogênio vão alcançar os EVs</p>
       </section>
       <section class="sec">
-        <h3>As desvantagens de AI Artisty</h3>
+        <h3><a href="#">As desvantagens de AI Artisty</a></h3>
         <p>Quais são os possíveis efeitos adversos da geração de imagens de AI sob demanda?</p>
       </section>
       <section>
-        <h3>O financiamento de capital de risco está secando?</h3>
+        <h3><a href="#">O financiamento de capital de risco está secando?</a></h3>
         <p>O financiamento privado por empresas de capital de risco caiu 50% AA. Vamos dar uma olhada no que isso significa.</p>
       </section>
     </aside>
-  </main>
   <footer>
     <div class="campo">
       <img src="images/image-retro-pcs.jpg" alt="imagem de pc retrô">
       <div class="text">
-        <h3>Revivendo PCs retrô</h3>
+        <h3><a href="#">Revivendo PCs retrô</a></h3>
         <p>o que acontece quando PCs antigos recebem atualizações moderna?</p>
       </div>
     </div>
     <div class="campo">
       <img src="images/image-top-laptops.jpg" alt="imagem de laptops">
       <div class="text">
-        <h3>Os 10 melhores laptops de 2022</h3>
+        <h3><a href="#">Os 10 melhores laptops de 2022</a></h3>
         <p>Nossas melhores escolhas para várias necessidades e orçamento</p>
       </div>
     </div>
     <div class="campo">
-      <img src="images/image-gaming-growth.jpg" alt="imagem de laptops">
+      <img src="images/image-gaming-growth.jpg" alt="imagem de gaming">
       <div class="text">
-        <h3>O crescimento dos jogos</h3>
+        <h3><a href="#">O crescimento dos jogos</a></h3>
         <p>Com a pandemia despertou novas oportunidades</p>
       </div>
     </div>

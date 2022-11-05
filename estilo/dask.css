@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width:768px){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header{
+    max-width:100%;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+ }
+  
+  .logos {
+    height: 80%;
+  }
+
+  .logos img{
+    width: 100%;
+  }
+
+  #icon{
+    display: none;
+  }
+  menu{
+    width: auto;
+    display: block;
+  } 
+ul{
+  display: flex;
+  gap: 10px;
+}
+ ul li{
+  background-color: white;
+  width: 70px;
+  }
+
+ li a:hover{
+  color: rgba(255, 157, 0, 0.797);
+}
+
+.img-web{
+
+  width: 686px;
+}
+
+.img-web img{
+  height: 100%;
+}
+
+main{
+  width: 682px;
+}
+main button:hover{
+  background-color: black;
+  cursor: pointer;
+}
+aside{
+  width: 682px;
+}
+
+aside h3 a{
+  font-size: 1.1em;
+  color: white;
+  text-decoration: none;
+}
+
+aside h3 a:hover{
+  color: rgb(255, 191, 0);
+}
+
+footer{
+  width: 682px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.campo{
+  width:70%; 
+ display: flex;
+ 
+}
+.campo img{
+  height: 100%;
+}
+
+.campo h3 a{
+  font-size: 1.1em;
+  color: black;
+  text-decoration: none;
+}
+
+.campo h3 a:hover{
+  color: #e7663b;
+}
+
+}
