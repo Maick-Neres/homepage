@@ -4,75 +4,269 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <script src="javascript.js" defer></script>
-  <link rel="stylesheet" href="estilo/style.css">
-  <link rel="stylesheet" href="estilo/dask.css">
-  <title>homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mediasquary.css">
+  <title>Pearson Hardman</title>
 </head>
-<body  onresize="size()">
-  <header>
-    <div class="logos">
-      <img src="images/logo.svg" alt="logo">
-      <span class="material-icons" id="icon">menu</span>
-      <span class="material-icons" id="icon2">closer</span>
-
+<body>
+  <header id="header">
+    <div id="inner-header">
+       <h2 id="brand">Pearson Hardman</h2>
+      <nav id="navbar">
+        <a href="#header">Início</a>
+        <a href="#expertise-areas">Serviços</a>
+        <a href="#about">Sobre</a>
+        <a href="#eteam">Time</a>
+        <a href="#contact">Contato</a>
+      </nav>
+      <!-- Menu Mobile -->
+      <i class="bi bi-list" id="menu"></i>
+      <nav id="mobile-navbar">
+        <i class="bi bi-x-lg" id="close-menu"></i>
+        <a href="#header">Início</a>
+        <a href="#expertise-areas">Serviços</a>
+        <a href="#about">Sobre</a>
+        <a href="#team">Time</a>
+        <a href="#contact">Contato</a>
+      </nav>
     </div>
-    <menu id="menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Novo</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">Tendência</a></li>
-        <li><a href="#">Categoria</a></li>
-      </ul>
-    </menu>
+    <div class="banner active">
+      <span class="square"></span>
+      <h2>Melhores experts em direito do país</h2>
+      <p>Os advogados mais bem qualificados estão aqui, agende uma reunião e conheça nosso time.</p>
+    </div>
+    <div class="dots">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
   </header>
-  <div class="img-web">
-    <img src="images/image-web-3-mobile.jpg" alt="imagem-web">
+  <!--Áreas de atuação-->
+
+  <main id="expertise-areas" class="text-image-section">
+    <div class="expertise-informaion text-container">
+      <p class="section-subtitle">Áreas de atuação</p>
+      <h3 class="text-title">Nossos especialistas podem ajudar você em Direito Civil, Ambiental, Empresarial.</h3>
+      <a href="#" class="btn">Saiba Mais</a>
+    </div>
+    
+    <div id="expertise-image-container" class="image-container">
+      <i class="bi bi-people"></i>
+      <img src="img/employees_banner.jpg" alt="advogados da Pearson Hardman">
+    </div>
+    <div id="other-services">
+      <div class="service">
+        <img src="img/bank.jpg" alt="banco">
+        <i class="bi bi-bank"></i>
+        <div class="service-info">
+          <h4>Bancos e Finanças pessoais</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione placeat ea sint omnis exercitationem accusamus obcaecati provident adipisci, hic tempore, quibusdam quo eaque modi? Optio temporibus et obcaecati cupiditate! Ea.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione placeat ea sint omnis exercitationem accusamus obcaecati provident adipisci, hic tempore, quibusdam quo eaque modi? Optio temporibus et obcaecati cupiditate! Ea. 
+          </p>
+        </div>
+      </div>
+        
+      <div class="service">
+        <img src="img/construction.jpg" alt="contrução">
+        <i class="bi bi-bricks"></i>
+        <div class="service-info">
+          <h4>Contrução de Imóveis sem escritura</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione placeat ea sint omnis exercitationem accusamus obcaecati provident adipisci, hic tempore, quibusdam quo eaque modi? Optio temporibus et obcaecati cupiditate! Ea.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione placeat ea sint omnis exercitationem accusamus obcaecati provident adipisci, hic tempore, quibusdam quo eaque modi? Optio temporibus et obcaecati cupiditate! Ea. 
+          </p>
+        </div>
+      </div>
+        
+      <div class="service">
+        <img src="img/company.jpg" alt="empresas">
+        <i class="bi bi-building"></i>
+        <div class="service-info">
+          <h4>Empresas e funcionários</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione placeat ea sint omnis exercitationem accusamus obcaecati provident adipisci, hic tempore, quibusdam quo eaque modi? Optio temporibus et obcaecati cupiditate! Ea.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione placeat ea sint omnis exercitationem accusamus obcaecati provident adipisci, hic tempore, quibusdam quo eaque modi? Optio temporibus et obcaecati cupiditate! Ea. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Soobre nós -->
+  <section id="about">
+    <div id="about-text">
+      <p class="section-subtitle">Sobre nós</p>
+      <h3 class="section-title">
+        Uma empresa que tem o foco no cliente, aconselhando da melhor forma e
+        conseguindo os melhores resultados
+      </h3>
+      <div class="about-description">
+        <i class="bi bi-briefcase"></i>
+        <div>
+          <h4>Advogados atualizados</h4>
+          <p>
+            Nós promovemos treinamentos mensais a todos os nossos
+            colaboradores
+          </p>
+        </div>
+      </div>
+      <div class="about-description">
+        <i class="bi bi-book"></i>
+        <div>
+          <h4>Domínio das leis</h4>
+          <p>
+            Nossos colaboradores são especializados em várias áreas do
+            Direito, dominando as principais leis em suas especialidades
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="about-data">
+      <div class="data">
+        <i class="bi bi-person"></i>
+        <p class="number">80</p>
+        <p class="text">Advogados</p>
+      </div>
+      <div class="data">
+        <i class="bi bi-check-all"></i>
+        <p class="number">1001</p>
+        <p class="text">Casos resolvidos</p>
+      </div>
+      <div class="data">
+        <i class="bi bi-building"></i>
+        <p class="number">75</p>
+        <p class="text">Clientes</p>
+      </div>
+      <div class="data">
+        <i class="bi bi-trophy"></i>
+        <p class="number">12</p>
+        <p class="text">Prêmios empresariais</p>
+      </div>
+    </div>
+  </section>
+  <!-- Depoimento -->
+  <section id="testimonials" class="text-imagem-section">
+    <div id="testimonial-information" class="text-container">
+      <p class="section-subtitle">Depoimentos de clientes</p>
+      <h3 class="section-title">A pearson Hardman resolveu meu caso muito rápido, recomendo a todos</h3>
+      <div class="author">
+        <div class="author-info">
+          <p class="author-name">Jhon Doe</p>
+          <p class="author-job">CEO da Empresa X</p>
+        </div>
+        <img src="img/author_1.jpg" alt="Jhon Doe">
+      </div>
+      <h3 class="section-title">O melhor escritório que eu já contratei, conseguimos resolver um caso que durava décadas.</h3>
+      <div class="author">
+        <div class="author-info">
+          <p class="author-name">PAUL CLINTON</p>
+          <p class="author-job">Gerente de Projetos</p>
+        </div>
+        <img src="img/author_2.jpg" alt="PAUL CLINTON">
+      </div>
+    </div>
+    <div id="testimonial-image-container" class="image-container">
+      <i class="bi bi-quote"></i>
+      <img src="img/court.jpg" alt="court">
+    </div>
+  </section>
+  <!-- Colaboradores -->
+  <section class="team">
+    <span class="square"></span>
+    <h2>A <span>Pearson Hardman </span>tem um time de especialistas a sua disposição</h2>
+    <div class="employees">
+      <div class="employee">
+        <img src="img/mike.jpg" alt="mike">
+        <p class="employee-name">Mike Ross</p>
+        <p class="employee-role">Advogado</p>
+      </div>
+  
+
+    <div class="employee">
+      <img src="img/harvey.png" alt="harvey">
+      <p class="employee-name">Harvey Specter</p>
+      <p class="employee-role">Advogado Sênior</p>
+    </div>
+
+
+        <div class="employee">
+        <img src="img/louis.jpg" alt="Luis Litt">
+        <p class="employee-name">Luis Litt</p>
+        <p class="employee-role">Advogado</p>
+      </div>
+  
+
+    <div class="employee">
+      <img src="img/jessica.jpg" alt="jessica Pearson">
+      <p class="employee-name">jessica Pearson</p>
+      <p class="employee-role">CEO</p>
+    </div>
   </div>
-  <main>
-    <h1>O futuro brilhante da web 3.0?</h1>
-    <p>Mergulhamos na próxima evolução da web que afirma colar o poder das plataformas de volta nas mãos das pessoas.Mas está realmente cumprindo sua promessa?</p>
-    <button>Saber mais</button>
-    </main>
-    <aside>
-      <h2>Novo</h2>
-      <section  class="sec">
-        <h3><a href="#">Hidrogênio VS Carros elétricos</a></h3>
-        <p>será que os carros movidos a Hidrogênio vão alcançar os EVs</p>
-      </section>
-      <section class="sec">
-        <h3><a href="#">As desvantagens de AI Artisty</a></h3>
-        <p>Quais são os possíveis efeitos adversos da geração de imagens de AI sob demanda?</p>
-      </section>
-      <section>
-        <h3><a href="#">O financiamento de capital de risco está secando?</a></h3>
-        <p>O financiamento privado por empresas de capital de risco caiu 50% AA. Vamos dar uma olhada no que isso significa.</p>
-      </section>
-    </aside>
-  <footer>
-    <div class="campo">
-      <img src="images/image-retro-pcs.jpg" alt="imagem de pc retrô">
-      <div class="text">
-        <h3><a href="#">Revivendo PCs retrô</a></h3>
-        <p>o que acontece quando PCs antigos recebem atualizações moderna?</p>
+  </section>
+  <!-- contato -->
+  <section id="contact" class="text-image-section">
+    <div id="contact-image-container" class="image-container">
+      <img src="img/office.jpg" alt="Advogados do escritório">
+    </div>
+    <div id="contact-information" class="text-container">
+      <i class="bi bi-envelope"></i>
+        <p class="section-subtitle">Entre em contato</p>
+        <form action="#" method="post" autocomplete="off">
+          <div class="form-control">
+            <input type="text" name="name" id="name" placeholder="Nome">
+            <input type="email" name="email" id="email" placeholder="E-mail">
+          </div>
+          <input type="text" name="phone" id="phone" placeholder="Telefone">
+          <textarea name="message" id="message" placeholder="Sua mensagem..."></textarea>
+          <input type="submit" value="Enviar" class="btn">
+        </form>
+    </div>
+  </section>
+  <!-- Rodapé -->
+  <footer id="footer">
+    <div class="contact-info">
+      <div class="footer-brand">
+        <h2>Pearson Hardman</h2>
+        <p>O advogado certo para a sua empresa</p>
+      </div>
+      <p><i class="bi bi-geo-alt"></i>Rua dos advogados, 1415</p>
+      <p><i class="bi bi-telephone"></i>(99)9 9999-9999</p>
+      <p><i class="bi bi-envelope"></i>contato@pearsonhardman.com</p>
+      <div class="social-networks">
+        <p>Siga-nós:</p>
+        <div class="networks">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
       </div>
     </div>
-    <div class="campo">
-      <img src="images/image-top-laptops.jpg" alt="imagem de laptops">
-      <div class="text">
-        <h3><a href="#">Os 10 melhores laptops de 2022</a></h3>
-        <p>Nossas melhores escolhas para várias necessidades e orçamento</p>
-      </div>
+    <div class="links">
+      <h4>Outros serviços</h4>
+      <nav>
+        <a href="#">Propriedade intelectual</a>
+        <a href="#">LGPD</a>
+        <a href="#">Direito internacional</a>
+        <a href="#">Processos</a>
+      </nav>
     </div>
-    <div class="campo">
-      <img src="images/image-gaming-growth.jpg" alt="imagem de gaming">
-      <div class="text">
-        <h3><a href="#">O crescimento dos jogos</a></h3>
-        <p>Com a pandemia despertou novas oportunidades</p>
+    <div class="links">
+      <h4>PÁGINAS</h4>
+      <nav>
+        <a href="#">Termos e condições</a>
+        <a href="#">Política de privacidade</a>
+        <a href="#">Fale com um especialista</a>
+        <a href="#">FAQ</a>
+      </nav>
+    </div>
+    <div class="links">
+      <h4>Consulta grátis</h4>
+      <div class="phone-number">
+        <i class="bi bi-telephone"></i>
+        <p>(99)9 9999-9999</p>
       </div>
+      <p class="phone-info">
+        Este telefone é especial para tratar de casos já am andamento.
+      </p>
     </div>
   </footer>
 </body>
